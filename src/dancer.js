@@ -18,7 +18,12 @@ Dancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
   // debugger;
-  setTimeout( this.step.bind(this), this.timeBetweenSteps);
+  var cont = this;
+  setTimeout(function() {
+    cont.step();
+    //cont.step.call(cont);
+    //without inner function, this.step.bind(this); but spec test doesn't pass with this
+  }, this.timeBetweenSteps);
 };
 
 

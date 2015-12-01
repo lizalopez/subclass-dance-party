@@ -28,6 +28,10 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+  $(".dancer").on("click", function(event) {
+    alert("XXXXX");
   });
 });
 
