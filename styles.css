@@ -3,13 +3,15 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
+  background-image: url(http://free.wallpaperbackgrounds.com/cartoon/artistic/127987-16023.jpg);
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .lineUp, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
@@ -21,12 +23,15 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:20px solid red;
+  border-radius:20px;
   position:absolute;
 }
 
-.chamdancer {
-  border:30px solid green;
-  
+#chamdancer {
+  width: 50px;
+  border:0px;
+  border-radius:0px; 
+  margin: 0;
+  /*border:30px solid green;*/
 }
