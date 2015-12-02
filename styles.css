@@ -4,8 +4,8 @@ body, html{
 body{
   margin: 0px;
   /*background-color:#444;*/
-  background-image: url(http://free.wallpaperbackgrounds.com/cartoon/artistic/127987-16023.jpg);
-  background-size: cover;
+  background-image: url("http://www.washingtonian.com/blogs/capitalcomment/assets_c/2012/10/2012-10-04-12038_Markhoff's_047-thumb-995xauto-45346.jpg");
+  background-size: contain;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -28,10 +28,20 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-#chamdancer {
+#bananadancer, #ghost, #skeleton {
   width: 50px;
   border:0px;
   border-radius:0px; 
   margin: 0;
   /*border:30px solid green;*/
 }
+
+img {
+    position: absolute;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

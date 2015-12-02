@@ -34,14 +34,14 @@ $(document).ready(function() {
         console.log('difference:', difference);
         window.dancers[i].$node.animate({
           "top": "-="+difference.toString()
-        }, 1000, "linear");
+        }, 100, "linear");
       }
       else {
         var diff = 300-window.dancers[i].top;
         console.log('diff', diff);
         window.dancers[i].$node.animate({
           "top": "+="+diff.toString()
-        }, 1000, "linear");
+        }, 100, "linear");
       }
     }   
   });
